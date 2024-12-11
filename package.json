@@ -1,0 +1,14 @@
+{
+  "name": "survplant",
+  "version": "1.0.0",
+  "description": "SurvPlant adalah aplikasi pendeteksi edible plant",
+  "scripts": {
+    "start": "http-server ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
