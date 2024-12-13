@@ -11,18 +11,31 @@
 ## Tujuan dan Alasan
 Proyek ini bertujuan untuk memberikan solusi yang berguna bagi individu yang berada dalam situasi darurat atau bagi mereka yang tertarik dengan tanaman liar yang dapat dimakan. Dengan menggunakan machine learning, proyek ini dapat membantu dalam identifikasi tanaman secara real-time dan memberikan informasi terkait nilai gizi tanaman tersebut.
 
-## Prasyarat
+## REST API Contract
+
+### POST /predict
+----
+Lakukan prediksi
+* **URL Params:**
+  None
+* **Headers:**
+  Content-Type: application/json
+* **Body:**
+  ```bash
+  {
+     image: value
+  }
+  ```
+* **Response**
+  Content:
+----
+## Prasyaratan
 
 ### Software/Tools:
-- Python 3.x
-- TensorFlow 2.x
-- Keras
-- TensorFlow.js (untuk porting ke aplikasi web)
-- Android Studio (untuk aplikasi mobile)
+- Code editor (VScode direkomendasikan)
+- Node.js
+- WSL (Terminal Linux untuk OS Windows)
 - Git (untuk version control)
-
-### Hardware:
-- CPU/GPU yang memadai (GPU opsional untuk pelatihan model yang lebih cepat)
 
 ## Instalasi
 
@@ -30,5 +43,17 @@ Proyek ini bertujuan untuk memberikan solusi yang berguna bagi individu yang ber
    Untuk memulai, clone repository ini ke mesin lokal Anda:
 
    ```bash
-   git clone https://github.com/username/survplant.git
+   git clone -b backend-api https://github.com/ramziahmar/survplant.git
+   ```
+   Lalu masuk ke directory /survplant
+   ```bash
    cd survplant
+   ```
+2. **Install NPM dan jalankan local server**
+   ```bash
+   npm i
+   ```
+   Jalankan local server
+   ```bash
+   npm run start
+   ```
