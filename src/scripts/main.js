@@ -118,7 +118,35 @@ async function uploadFile(formData) {
 // Show result to user
 function showPredictionResult(response) {
   const { message, data } = response;
-
+  if (data.confidenceScore < 77) {
+    result.innerHTML = `
+    <div class="response-message">
+      <i class="fas fa-check"></i>
+      <span class="message">${message}</span>
+    </div>
+    <div class="prediction-result">
+      <div>
+        <div class="result-title">Confidence score:</div>
+        <div>
+          <span>${data.confidenceScore.toFixed(2)}</span>
+          <progress
+            class="confidence-score-red"
+            value="${data.confidenceScore.toFixed(2)}"
+            max="100"
+          ></progress>
+        </div>
+      </div>
+      <div>
+        <div class="result-title">Class:</div>
+        <div>${data.result}</div>
+      </div>
+      <div>
+        <div class="result-title">Description:</div>
+        <div>edible plants were not detected</div>
+      </div>
+    </div>
+  `;  
+  } else {
   result.innerHTML = `
     <div class="response-message">
       <i class="fas fa-check"></i>
@@ -154,6 +182,7 @@ function showPredictionResult(response) {
       </div>
     </div>
   `;
+}
 }
 
 // Show error message to user
