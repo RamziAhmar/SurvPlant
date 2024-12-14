@@ -47,7 +47,7 @@ Preview of the image and data used are shown in the picture below.
 
 ## Open In Colab
 
-### Covid-19
+### Edible Wild Plants
 - [x] [SurvPlantModel.ipynb](https://github.com/RamziAhmar/SurvPlant/blob/model-ml/CapstoneProject(uplaod).ipynb)
 
 ## Features
