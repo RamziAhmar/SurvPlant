@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img align="center" src="/img/SurvPlant (1).png"></img>
+  <img align="center" src="/image/SurvPlant (1).png"></img>
 <br>
 SurvPlant
 </h1>
@@ -41,7 +41,7 @@ Building models that include [Edible PLants Detection](). Build process using *b
 
 Preview of the image and data used are shown in the picture below.
 
-<img align="center" src="/img/plants_image.png"></img>
+<img align="center" src="/image/plants_image.png"></img>
 
 <p align="center">Edible Wild Plants Calssification</p>
 
