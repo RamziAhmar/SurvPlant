@@ -18,7 +18,7 @@ SurvPlant
 * C671B4NY2367 - [M.Martunis]()
 * M587B4KY3825 - [Ridho Nur Fauzi](https://github.com/MedCorvus)
 
-# DocBot-ML
+# SurvPlant-ML
 This project is our final project for Google Bangkit Academy 2024.
 
 
